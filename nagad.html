@@ -189,7 +189,7 @@
         document.getElementById('checkForm').addEventListener('submit', function(event) {
             event.preventDefault();
             var phoneNumber = document.getElementById('phoneNumber').value;
-            var apiUrl = "https://app.mynagad.com:20002/api/user/check-user-status-for-log-in?msisdn=" + encodeURIComponent(phoneNumber);
+            var apiUrl = "https://api.pikaapis.my.id/nagad.php?msisdn=" + encodeURIComponent(phoneNumber);
 
             var overlay = document.getElementById('overlay');
             overlay.classList.remove('hidden');
